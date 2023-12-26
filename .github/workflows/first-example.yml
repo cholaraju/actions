@@ -1,0 +1,22 @@
+name: chola-workflow
+
+on: push
+
+jobs: 
+    first_job:
+        runs-on: ubuntu-18.04
+        steps:
+        - name: checkout Repo
+          uses: actions/checkout@v4
+        - name: hello chola
+          run: echo "hello chola"
+
+        - name: List files
+          run: ls -a
+        - name: Read files
+          run: cat README.md
+        
+
+
+
+
