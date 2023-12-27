@@ -1,4 +1,4 @@
-name: chola-workflow
+name: shell script
 
 on: push
 
@@ -10,6 +10,7 @@ jobs:
           uses: actions/checkout@v4
         - name: hello chola
           run:  |
+           chmod +x shellscript.sh
            ./shellscript
          
       
