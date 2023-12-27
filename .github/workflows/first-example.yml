@@ -4,17 +4,20 @@ on: push
 
 jobs: 
     first_job:
-        runs-on: ubuntu-18.04
+        runs-on: ubuntu-latest
         steps:
         - name: checkout Repo
           uses: actions/checkout@v4
         - name: hello chola
-          run: echo "hello chola"
+          run: |
+            echo "hello chola"
+            ls -ltra
+            cat README.md
+        - name: Generate ASCII Artwork
+          run: cowsay -f dragon "Run for Cover,  I AM A DRAGON.. RAWSR ">> dragon.txt
 
-        - name: List files
-          run: ls -a
-        - name: Read files
-          run: cat README.md
+        
+      
         
 
 
