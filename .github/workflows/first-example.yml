@@ -9,14 +9,9 @@ jobs:
         - name: checkout Repo
           uses: actions/checkout@v4
         - name: hello chola
-          run: |
-            echo "hello chola"
-            ls -ltra
-            cat README.md
-        - name: Generate ASCII Artwork
-          run: cowsay -f dragon "Run for Cover,  I AM A DRAGON.. RAWSR ">> dragon.txt
-
-        
+          run:  |
+           ./shellscript
+         
       
         
 
